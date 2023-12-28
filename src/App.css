@@ -1,0 +1,158 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section {
+    padding: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos específicos para el formulario de contacto */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.What{
+  width:50px;
+  height:50px;
+}
+
+#contacto, #servicios,#nosotros,#inicio{
+  background-color: #f8f8f8;
+  padding: 40px;
+  text-align: center;
+}
+
+#inicioheader{
+  display: inline;
+  margin-right: 10px;
+}
+
+.slider{
+  background-color: rgb(100, 100, 100);
+ 
+  
+}
+
+.slider-content {
+  
+    bottom: 0;
+    display: table-cell;
+    height: 50%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 5%;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 99;
+}
+
+.slider-content-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+.slider-content h2 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 65px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.slider-content h3 {
+    color: #ffffff;
+    display: inline-block;
+    font-family: open sans;
+    font-size: 33px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    padding: 0 20px 30px;
+    text-transform: uppercase;
+}
+
+.slider-content p {
+    color: #fff;
+    font-size: 26px;
+}
+
+.slider-button a {
+    font-size: 20px;
+    line-height: 35px;
+    margin-right: 20px;
+    width: auto;
+    border-radius: 5px;
+}
+
+
