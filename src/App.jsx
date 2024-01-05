@@ -4,12 +4,15 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from "../public/carousel-1.jpg";
+
+import img1 from "../public/logo.jpg";
 import img2 from "../public/carousel-2.jpg";
 import img3 from "../public/whatsapp.svg";
 import img4 from "../public/despido.png";
 import img5 from "../public/indemnizacion.png";
 import img6 from "../public/accidentes.png";
+import face from "../public/facebook.png";
+import link from "../public/linkedin.png";
 
 const Carousel = () => {
   const settings = {
@@ -19,33 +22,25 @@ const Carousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000, 
+    autoplaySpeed: 5000,
     // Intervalo de cambio de diapositivas en milisegundos (5 segundos en este caso)
   };
 
   return (
-    
-    <Slider  {...settings} >
-      
-      <div class='slider'>
-        <img   src={img1} alt="Imagen 1" />
-        <div class="slider-content">
-            <div class="slider-content-inner text-center">
-                <h2>Abogados Laborales</h2>
-                <h3>CONSULTA SIN CARGO</h3>
-                <div class="slider-button">
-                    <a href="##" target="formubox"  class="btn btn-primary"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Consultar Ahora Online</a>
-                </div>
+    <section id="inicio">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={img2} class="d-block w-100" alt="Imagen 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-1 fs-3 text-capitalize">Abogados Laborales</h3>
+              <p>Consulta sin cargo</p>
+              <button class="btn btn-primary"> CONTACTO</button>
             </div>
+          </div>
         </div>
-        
       </div>
-      <div>
-        <img src={img2} alt="Imagen 2" />
-      </div>
-
-      {/* Agrega más diapositivas según sea necesario */}
-    </Slider>
+    </section>
   );
 };
 
@@ -53,8 +48,38 @@ export default function App() {
   return (
     <div>
       <header>
-        <div class="logo">Nombre del Estudio</div>
-        <nav>
+        <div class="logo"><div class="row bg-white border-bottom d-none d-lg-flex">
+            <div class="col-lg-7 text-left">
+                <div class="h-100 d-inline-flex align-items-center py-2 px-3">
+                    <i class="fa fa-envelope text-primary mr-2"></i>
+                    <small>info@example.com</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-2 px-2">
+                    <i class="fa fa-phone-alt text-primary mr-2"></i>
+                    <small>+012 345 6789</small>
+                </div>
+            </div>
+            <div class="col-lg-5 text-right">
+                <div class="d-inline-flex align-items-center p-2">
+                    <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                        <i class="fab fa-facebook-f"><img class="What" src={face}></img></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                        <i class="fab fa-twitter"><img class="What" src={link}></img></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-primary btn-sm-square mr-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div></div>
+        <nav class='main-menu-v2'>
           <ul>
             <li>
               <a href="#inicio" id="inicioheader">
@@ -73,16 +98,25 @@ export default function App() {
           </ul>
         </nav>
       </header>
-      
-        <Carousel />
-      
-     
+
+      {/*imagen header*/}
+      <div id="carouselExample">
+        <div class="carousel-inner">
+          <div>
+            <img src={img2} class="w-80 " alt="Imagen 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h3 class="display-1 fs-3 text-capitalize">Abogados Laborales</h3>
+              <p>Consulta sin cargo</p>
+              <button class="btn btn-primary"> CONTACTO</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section id="inicio">
         <h2>Bienvenido al Bufete Legal</h2>
         <p>Expertos en casos laborales.</p>
       </section>
-
       <section id="nosotros">
         <h2 id="nosotros">Nosotros</h2>
         <p>
@@ -95,7 +129,6 @@ export default function App() {
           asesoramiento legal para trabajadores es gratuito, sin cargo.
         </p>
       </section>
-
       <section id="servicios">
         <h2>Servicios</h2>
         <ul id="servicios">
@@ -107,7 +140,6 @@ export default function App() {
           <p>Accidentes de Trabajo</p>
         </ul>
       </section>
-
       <section id="contacto">
         <h2>Contacto</h2>
         <p>
@@ -117,9 +149,8 @@ export default function App() {
           </a>
         </p>
       </section>
-
       <footer>
-        <p>&copy; 2023 Bufete Legal</p>
+        <p>&copy; 2023 Bufete Legal<span> AbogadosLaboral.com.ar</span></p>
       </footer>
     </div>
   );
